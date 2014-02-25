@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Please login</title>
+    <link href="http://fonts.googleapis.com/css?family=Poiret+One&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript">
+			<!--
+			function auth(secret) {
+				if (secret) self.location = "auth.html?" + secret;
+				return false;
+			}
+			// -->
+		</script>
+
+  </head>
+  
+  <body>
+  
+    <div class="center"><img id="header-line" src="vmwline.png"></div>
+    <div class="center top-50px">
+      <h1><span class="bottom-line">Please input a secret</span></h1>
+      <div class="text-block">
+				<script type="text/javascript">
+					<!--
+					if (location.search.indexOf("auth=failed") != -1) {
+						document.write("<span class=\"failed\">Authorization Failed!<br></span><span class=\"comment\">You may not have access to this page, sorry...</span>");
+					}
+					// -->
+				</script>
+				<form id="authForm" action="javascript://" onsubmit="return auth(this.secret.value)">
+					<p>
+						Secret: <input id="secret" type="text" name="secret" placeholder="top-secret" maxlength="10" size="9" autofocus><br>
+						<label for="secret">Please enter your secret and press enter or button below.</label>
+					</p>
+          <p><input id="submit" type="submit" value="Try to log-in"></td>
+				</form>
+      </div>
+    </div>
+    
+    <div id="bottom-bar">
+      Powered by VMware Moscow!
+    </div>
+		
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-39857108-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+  </body>
+</html>

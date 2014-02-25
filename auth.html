@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Authorization is in progress...</title>
+    <link href="http://fonts.googleapis.com/css?family=Poiret+One&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript">
+			<!--
+			var authstring = "<script type=\"text/javascript\" src=\"" + location.search.substring(1) + ".js\"><\/script>";
+			if (location.search) document.write(authstring);
+			// -->
+		</script>
+
+  </head>
+  
+  <body>
+  
+    <div class="center"><img id="header-line" src="vmwline.png"></div>
+    <div class="center top-50px">
+      <h1><span class="bottom-line">Please input a secret</span></h1>
+      <div class="text-block">
+      	<p>Authorization is in progress...</p>
+				<script type="text/javascript">
+					<!--
+					window.auth ? location.replace(redirect) : location.replace("index.html?auth=failed");
+					// -->
+				</script>
+      </div>
+    </div>
+    
+    <div id="bottom-bar">
+      Powered by VMware Moscow!
+    </div>
+		
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-39857108-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+  </body>
+</html>
